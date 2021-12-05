@@ -1,0 +1,55 @@
+:root  {
+    
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    
+    --main-bg-color: #2E8B57;
+    --second-bg-color: #DBF2E5;
+    --primary-color: #FFFFFF;
+    --secondary-color:#000000;
+    --color-cart: #4E685A;
+    --bg-danger: #E62020;
+    
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    align-items: center;
+    
+}
+
+.menu-icon {
+    width: 50px;
+}
+
+
+
+img {
+    width: 100px;
+}
