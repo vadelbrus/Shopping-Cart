@@ -165,3 +165,6 @@ header .cart-number {
     font-weight: 700;
 }
 
+.minicart {
+    display: none;
+}
