@@ -1,0 +1,140 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "carrot",
+                "description": "Carrot can be consumed fresh or cooked. Carrot juice is consumed as a beverage.",
+                "price": 10,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/carrot.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "cucumber",
+                "description": "The cucumber is a creeping vine that roots in the ground and grows up trellises or other supporting frames.",
+                "price": 8,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/cucumber.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "banana",
+                "description": "A banana is a curved, yellow fruit with a thick skin and soft sweet flesh.",
+                "price": 6,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/bananas.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "4"
+            },
+            "fields": {
+                "title": "orange",
+                "description": "Oranges are round orange-coloured fruit that grow on a tree which can reach 10 metres (33 ft) high.",
+                "price": 9,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/orange.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "5"
+            },
+            "fields": {
+                "title": "kiwi",
+                "description": "Kiwi is a fruit of ovoid shape, of variable size and covered with a brown fuzzy thin skin.",
+                "price": 7,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/kiwi.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "6"
+            },
+            "fields": {
+                "title": "beetroot",
+                "description": "Beetroot is the large and fleshy root growing in the plant of the same name, eaten as a vegetable.",
+                "price": 8,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/beetroot.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "7"
+            },
+            "fields": {
+                "title": "onion",
+                "description": "Image result for onion description An onion is a round vegetable with a brown skin that grows underground.",
+                "price": 12,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/onion.png"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "8"
+            },
+            "fields": {
+                "title": "strawberry",
+                "description": "A strawberry is both a low-growing, flowering plant and also the name of the fruit that it produces.",
+                "price": 10,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "./assets/products/strawberry.png"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
