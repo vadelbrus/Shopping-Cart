@@ -108,7 +108,7 @@
             },
             "fields": {
                 "title": "onion",
-                "description": "Image result for onion description An onion is a round vegetable with a brown skin that grows underground.",
+                "description": "An onion is a round vegetable with a brown skin that grows underground.",
                 "price": 12,
                 "image": {
                     "fields": {
