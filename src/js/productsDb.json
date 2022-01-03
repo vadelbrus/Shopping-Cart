@@ -8,6 +8,7 @@
                 "title": "carrot",
                 "description": "Carrot can be consumed fresh or cooked. Carrot juice is consumed as a beverage.",
                 "price": 10,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -25,6 +26,7 @@
                 "title": "cucumber",
                 "description": "The cucumber is a creeping vine that roots in the ground and grows up trellises or other supporting frames.",
                 "price": 8,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -42,6 +44,7 @@
                 "title": "banana",
                 "description": "A banana is a curved, yellow fruit with a thick skin and soft sweet flesh.",
                 "price": 6,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -59,6 +62,7 @@
                 "title": "orange",
                 "description": "Oranges are round orange-coloured fruit that grow on a tree which can reach 10 metres (33 ft) high.",
                 "price": 9,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -76,6 +80,7 @@
                 "title": "kiwi",
                 "description": "Kiwi is a fruit of ovoid shape, of variable size and covered with a brown fuzzy thin skin.",
                 "price": 7,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -93,6 +98,7 @@
                 "title": "beetroot",
                 "description": "Beetroot is the large and fleshy root growing in the plant of the same name, eaten as a vegetable.",
                 "price": 8,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -110,6 +116,7 @@
                 "title": "onion",
                 "description": "An onion is a round vegetable with a brown skin that grows underground.",
                 "price": 12,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {
@@ -127,6 +134,7 @@
                 "title": "strawberry",
                 "description": "A strawberry is both a low-growing, flowering plant and also the name of the fruit that it produces.",
                 "price": 10,
+                "quantity": 1,
                 "image": {
                     "fields": {
                         "file": {

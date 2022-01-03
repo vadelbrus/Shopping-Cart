@@ -7,8 +7,7 @@ import cartFunctionality from './cartFunctionality.js'
 
 //Add cart functionality: open/hide cart
 
-cartFunctionality.openCart();
-cartFunctionality.closeCart();
+cartFunctionality.toogleCartState();
 
 //Populate gallery of products
 
@@ -16,21 +15,34 @@ await displayProducts();
 
 //Populate minicart from local storage
 
-const items = storage.getCartItems();
+cartLogic.displayProductsInCart()
 
-items.forEach( item => cartFunctionality.populateCart(item));
+//Add minicart item user action listener
+
+cartLogic.minicartAction();
+
+//Set checkout value
+
+cartLogic.checkout.textContent = `${cartLogic.calculateTotalAmmount(storage.getCartItems())}$`;
 
 //Load event listeners to cart buttons
 
 document.querySelectorAll('.product-button').forEach(item => item.addEventListener('click',  (event) => {
     event.preventDefault();
+    event.target.disabled = true;
+    event.target.style.backgroundColor = 'grey';
     
     const productId = event.target.dataset.id;
     cartLogic.addProductToCart(productId);
 }));
 
+//Add button background to UI to all items in cart
+
+cartLogic.cart.forEach((item) => {
+    document.querySelector(`[data-id='${item.sys.id}']`).style.backgroundColor = 'grey'})
+
 //Remove all products from minicart UI after clicking 'CLEAR CART' button
 
-document.querySelector('.clear-button').addEventListener('click', cartFunctionality.clearCartFromUI);
+document.querySelector('.clear-button').addEventListener('click', cartLogic.clearCartFromUI);
 
 })()
