@@ -93,7 +93,7 @@ header .cart-image {
 header .cart-number {
     position: absolute;
     top: -2px;
-    right: 4px;
+    right: 0px;
     
     color: #fff;
     font-size: 14px;
@@ -252,6 +252,7 @@ header .cart-number {
 .counter {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7 );
     font-size: 16px;
@@ -261,6 +262,7 @@ header .cart-number {
     
     border: none;
     background-color: transparent;
+    font-size: 20px;
     
 }
 

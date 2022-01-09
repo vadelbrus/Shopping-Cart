@@ -2,7 +2,8 @@ const storage = {
     cartNameHandler: 'cart',
 
     getCartItems() {
-        return localStorage.getItem(storage.cartNameHandler) ? JSON.parse(localStorage.getItem(storage.cartNameHandler)) : [];
+        
+        return  localStorage.getItem(storage.cartNameHandler) ? JSON.parse(localStorage.getItem(storage.cartNameHandler)) : [];
     },
 
     saveCartItems(item) {

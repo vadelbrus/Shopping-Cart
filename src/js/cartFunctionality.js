@@ -2,8 +2,7 @@ import cartLogic from "./cartLogic.js";
 import storage from "./storage.js";
 
 const cartFunctionality = {
-        // minicartContent: document.querySelector('.minicart-items'),
-    
+            
     openCart() {
         document.querySelector(".cart-icon").addEventListener('click', (e) => {
         e.preventDefault();
@@ -11,7 +10,7 @@ const cartFunctionality = {
         minicart.classList.toggle('is-open');
         })
 
-            },
+    },
 
     closeCart() {
         document.querySelector('.close-minicart').addEventListener('click', (e) => {
