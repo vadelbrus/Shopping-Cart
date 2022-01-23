@@ -4,13 +4,16 @@ import storage from './storage.js';
 const cartLogic = {
 
     //SET INITIAL CART VALUES
+    
     cart: storage.getCartItems(),
     cartValue: 0,
     productsInCart: 0,
 
     //SELECT ELEMENTS FROM DOM
+
     minicartContent: document.querySelector('.minicart-items'),
     checkout: document.querySelector('.checkout-amount'),
+    
 
     //LOAD PRODUCTS FROM EXTERNAL JSON
     
@@ -19,6 +22,34 @@ const cartLogic = {
         const products = await fetchProducts();
         return products.items.find((item) => {
             return item.sys.id  === id});
+    },
+
+    showSummary(){
+                
+    const modal = document.querySelector('.modal-container');
+    modal.classList.toggle('show-modal');
+
+        const totalPrice = document.querySelector('.modal-value');
+        const modalProducts = document.querySelector('.modal-products');
+        totalPrice.textContent = `${cartLogic.calculateTotalAmmount(storage.getCartItems())}$`;
+        const table = document.createElement('table');
+        table.classList.add('modal-table');
+        modalProducts.innerHTML = "";
+
+        cartLogic.cart.forEach( (product) => {
+        const row = document.createElement('tr');
+        const cellTitle = document.createElement('td');
+        const cellAmmount = document.createElement('td');
+
+        cellTitle.textContent = product.fields.title;
+        cellAmmount.textContent = product.fields.quantity;
+        row.appendChild(cellTitle);
+        row.appendChild(cellAmmount);
+        table.appendChild(row)
+        }),
+
+    modalProducts.appendChild(table);
+        
     },
 
     //ADD PRODUCT TO CART

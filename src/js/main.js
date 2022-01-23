@@ -30,6 +30,21 @@ document.querySelector('.cart-number').textContent = cartLogic.calculateNumberOf
 
 cartLogic.checkout.textContent = `${cartLogic.calculateTotalAmmount(storage.getCartItems())}$`;
 
+
+//Display summary when user clicks on checkout button
+
+document.querySelector('.checkout-button').addEventListener('click', cartLogic.showSummary);
+
+document.addEventListener('click', (e)=> {
+    
+    if( e.target.matches('.modal-close') || e.target.matches('.modal-container') 
+    ) {
+        
+        document.querySelector('.modal-container').classList.remove('show-modal')
+    }
+}, false)
+
+
 //Load event listeners to cart buttons
 
 document.querySelectorAll('.product-button').forEach(item => item.addEventListener('click',  (event) => {
@@ -43,6 +58,7 @@ document.querySelectorAll('.product-button').forEach(item => item.addEventListen
     cartLogic.addProductToCart(productId);
     
 }));
+
 
 //Add button background to UI to all items in cart
 
